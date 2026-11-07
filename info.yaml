@@ -5,13 +5,13 @@ project:
   discord:      "KURENANI"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "A Chip that measures the input and then displays it on a screen"      # One line description of what your project does
   language:     "VHDL"  # other examples include Verilog, SystemVerilog, Amaranth, etc
-  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+  clock_hz:     10e5       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 340x160 uM.
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 3x4 or 4x4
 
   # Your top module name must start with "tt_um_". Make it unique by including your github username:
-  top_module:  "tt_um_example"
+  top_module:  "tt_um_SignalType"
 
   # List your project's source files here.
   # Source files must be in ./src and you must list each source file separately, one per line.
@@ -26,8 +26,8 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: ""
-  ui[1]: ""
+  ui[0]: "first bit of input"
+  ui[1]: "last bit of input"
   ui[2]: ""
   ui[3]: ""
   ui[4]: ""
@@ -36,24 +36,24 @@ pinout:
   ui[7]: ""
 
   # Outputs
-  uo[0]: ""
-  uo[1]: ""
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: ""
-  uo[5]: ""
-  uo[6]: ""
-  uo[7]: ""
+  uo[0]: "first bit Output to the first 7 segment display"
+  uo[1]: "Inbetween"
+  uo[2]: "Inbetween"
+  uo[3]: "Inbetween"
+  uo[4]: "Inbetween"
+  uo[5]: "Inbetween"
+  uo[6]: "Inbetween"
+  uo[7]: "last bit Output to 7 segment display"
 
   # Bidirectional pins
-  uio[0]: ""
-  uio[1]: ""
-  uio[2]: ""
-  uio[3]: ""
-  uio[4]: ""
-  uio[5]: ""
-  uio[6]: ""
-  uio[7]: ""
+  uio[0]: "first bit Output to the second 7 segment display"
+  uio[1]: "Inbetween"
+  uio[2]: "Inbetween"
+  uio[3]: "Inbetween"
+  uio[4]: "Inbetween"
+  uio[5]: "Inbetween"
+  uio[6]: "Inbetween"
+  uio[7]: "last bit Output to the second 7 segment display"
 
 # Do not change!
 yaml_version: 6
