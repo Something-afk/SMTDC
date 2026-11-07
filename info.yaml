@@ -1,9 +1,9 @@
 # Tiny Tapeout project information
 project:
   title:        "Spänningmätningtilldisplaychip"      # Project title
-  author:       ""      # Your name
-  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  ""      # One line description of what your project does
+  author:       "NoName"      # Your name
+  discord:      "KURENANI"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "A Chip that measures the input and then displays it on a screen"      # One line description of what your project does
   language:     "VHDL"  # other examples include Verilog, SystemVerilog, Amaranth, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
